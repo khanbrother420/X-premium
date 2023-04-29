@@ -131,7 +131,25 @@ def PARVEJ_programmer():
     if NAHID == '0': 
         os.system('exit')
         return None
+# Basic colors
+black="\033[0;30m"
+red="\033[0;31m"
+green="\033[0;32m"
+yellow="\033[0;33m"  
+blue="\033[0;34m"
+purple="\033[0;35m"
+cyan="\033[0;36m"
+white="\033[0;37m"
 
+# Snippets
+ask = green + '\n[' + white + '?' + green + '] '+ yellow
+success = green + '\n[' + white + '√' + green + '] '
+error = red + '\n[' + white + '!' + red + '] '
+info= yellow + '\n[' + white + '+' + yellow + '] '+ cyan
+
+# Current Directory
+pwd=os.getcwd()
+    
 logo = ("""
 {cyan  } ___  ____   ____  ____       _       ____  _____  
 {cyan  }|_  ||_  _| |_   ||   _|     / \     |_   \|_   _| 
